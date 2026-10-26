@@ -1,1 +1,262 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>لفظ ودلالته: نور</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg1:#fff8e6;--bg2:#ffe9b8;--card:rgba(255,255,255,.78);--ink:#1b2a41;--mute:#5d6b80;--gold:#c98a00;--teal:#1f7a8a;--line:rgba(27,42,65,.14);--glow:rgba(240,165,0,.45);--ok:#1b7a47;--bad:#b3402f}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){color-scheme:dark;--bg1:#0d1626;--bg2:#1a2c4a;--card:rgba(29,45,66,.72);--ink:#f6efdc;--mute:#a9b8cc;--gold:#f6c243;--teal:#63c3d3;--line:rgba(246,239,220,.16);--glow:rgba(246,194,67,.4);--ok:#6fd3a0;--bad:#f08a78}}
+:root[data-theme="dark"]{color-scheme:dark;--bg1:#0d1626;--bg2:#1a2c4a;--card:rgba(29,45,66,.72);--ink:#f6efdc;--mute:#a9b8cc;--gold:#f6c243;--teal:#63c3d3;--line:rgba(246,239,220,.16);--glow:rgba(246,194,67,.4);--ok:#6fd3a0;--bad:#f08a78}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:Tajawal,"Segoe UI",Tahoma,sans-serif;line-height:1.7;background:linear-gradient(160deg,var(--bg1),var(--bg2));background-attachment:fixed;overflow-x:hidden}
+.fx{position:fixed;inset:0;pointer-events:none;overflow:hidden;z-index:0}
+.orb{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;animation:drift 14s ease-in-out infinite alternate}
+.o1{width:320px;height:320px;background:var(--glow);top:-80px;right:-60px}
+.o2{width:260px;height:260px;background:#1f7a8a55;bottom:-60px;left:-40px;animation-delay:-5s}
+.p{position:absolute;bottom:-20px;border-radius:50%;background:var(--gold);opacity:0;animation:rise linear infinite}
+@keyframes drift{to{transform:translate(40px,60px) scale(1.2)}}
+@keyframes rise{0%{transform:translateY(0);opacity:0}15%{opacity:.8}100%{transform:translateY(-105vh);opacity:0}}
+main{position:relative;z-index:1;max-width:760px;margin:0 auto;padding:16px 18px 40px}
+.top{display:flex;align-items:center;gap:8px}
+.steps{display:flex;flex:1;gap:6px;overflow-x:auto;scrollbar-width:none}
+.step{font:inherit;font-size:13px;font-weight:700;flex:1;white-space:nowrap;padding:6px 8px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--mute);cursor:pointer;transition:all .3s}
+.step.on{background:var(--gold);color:#1b2a41;border-color:var(--gold);transform:scale(1.05)}
+.snd{font-size:20px;background:var(--card);border:1px solid var(--line);border-radius:50%;width:40px;height:40px;cursor:pointer;color:var(--ink)}
+.screen{display:none;padding-top:20px}
+.screen.on{display:block;animation:enter .6s cubic-bezier(.2,.8,.2,1)}
+@keyframes enter{from{opacity:0;transform:translateX(-50px) scale(.97)}to{opacity:1;transform:none}}
+.glass{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:24px;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);box-shadow:0 12px 40px rgba(0,0,0,.12)}
+.hero{text-align:center;position:relative;padding-top:12px}
+.rays{position:absolute;left:50%;top:150px;width:560px;height:560px;margin:-280px 0 0 -280px;background:repeating-conic-gradient(var(--glow) 0 7deg,transparent 7deg 22deg);-webkit-mask-image:radial-gradient(circle,#000 0,transparent 68%);mask-image:radial-gradient(circle,#000 0,transparent 68%);animation:spin 50s linear infinite;opacity:.7}
+@keyframes spin{to{transform:rotate(360deg)}}
+.kicker{position:relative;display:inline-block;color:var(--teal);font-weight:800;font-size:16px;border:1px solid var(--line);border-radius:999px;padding:2px 16px;background:var(--card)}
+h1{position:relative;font-family:"Reem Kufi",Tajawal,serif;font-size:clamp(120px,34vw,220px);line-height:1.15;margin:8px 0;font-weight:700;background:linear-gradient(180deg,#ffe28a,var(--gold) 60%,#a86b00);-webkit-background-clip:text;background-clip:text;color:transparent;animation:pulse 3.2s ease-in-out infinite;filter:drop-shadow(0 0 28px var(--glow))}
+@keyframes pulse{50%{transform:scale(1.05);filter:drop-shadow(0 0 48px var(--glow))}}
+.lead{position:relative;font-size:20px;margin:0 0 20px;color:var(--mute)}
+.credit{position:relative;text-align:center;margin:16px auto;max-width:440px}
+.credit .lbl{font-size:14px;color:var(--teal);font-weight:800}
+.credit .nm{font-size:24px;font-weight:800;margin-bottom:6px}
+.credit .gr{font-size:16px;color:var(--mute);margin-bottom:10px}
+.btn{font:inherit;font-size:18px;font-weight:800;color:#1b2a41;background:linear-gradient(135deg,#ffd35e,#e9a000);border:0;border-radius:16px;padding:12px 28px;cursor:pointer;box-shadow:0 8px 24px var(--glow);transition:transform .2s}
+.btn:hover{transform:translateY(-3px) scale(1.03)}
+.btn.ghost{background:transparent;color:var(--teal);border:2px solid var(--teal);box-shadow:none;font-size:16px;padding:8px 18px}
+h2{font-size:26px;margin:0 0 14px;font-weight:800}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.intro{color:var(--mute);font-size:18px;margin:-4px 0 16px}.fact{font-size:17px;color:var(--teal);margin:14px 0 0;font-weight:700}
+.tile{font:inherit;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:12px 6px;cursor:pointer;color:var(--ink);transition:all .3s;text-align:center}
+.tile:hover{transform:translateY(-4px)}
+.tile .e{font-size:30px;display:block;line-height:1.2}
+.tile .t{font-size:13px;font-weight:700}
+.tile[aria-pressed="true"]{border-color:var(--ac);box-shadow:0 0 0 3px var(--ac),0 10px 28px var(--glow);transform:translateY(-4px) scale(1.04)}
+.mcard{margin-top:16px;text-align:center;border-color:var(--ac);--ac:#f0a500}
+.mcard .ic{font-size:72px;line-height:1;display:inline-block;animation:bounce .8s}
+@keyframes bounce{0%{transform:scale(.3) rotate(-20deg);opacity:0}60%{transform:scale(1.2) rotate(6deg)}100%{transform:none;opacity:1}}
+.badge{display:inline-block;background:var(--ink);color:var(--bg1);border-radius:999px;padding:2px 16px;font-size:14px;font-weight:800;margin:6px 0}
+.mean{font-size:26px;font-weight:800}
+.sent{font-size:21px;margin:8px 0 0;animation:fade .6s .2s both}
+.sent b{color:var(--gold);text-shadow:0 0 14px var(--glow)}
+@keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tab{font:inherit;font-weight:800;font-size:16px;padding:8px 18px;border-radius:999px;border:2px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer;transition:all .3s}
+.tab[aria-selected="true"]{background:var(--teal);border-color:var(--teal);color:#fff}
+.ctx{min-height:230px;font-size:22px;line-height:1.9}
+.ctx .src{font-size:15px;color:var(--mute);margin-top:12px}
+.ctx .w{animation:fade .35s both}
+.ctx .quran{font-size:30px;text-align:center;color:var(--gold);font-weight:700}
+.prog{height:10px;border-radius:99px;background:var(--line);overflow:hidden;margin-bottom:14px}
+.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--teal),var(--gold));transition:width .6s}
+.q{font-size:24px;font-weight:800;margin:6px 0;text-align:center}
+.hint{text-align:center;color:var(--mute);font-size:15px;margin:0}
+.opts{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:16px}
+.opt{font:inherit;font-size:17px;font-weight:800;background:var(--card);color:var(--ink);border:2px solid var(--line);border-radius:14px;padding:10px 18px;cursor:pointer;transition:all .25s}
+.opt:hover{transform:translateY(-3px);border-color:var(--gold)}
+.opt.right{border-color:var(--ok);color:var(--ok);animation:bounce .6s}
+.opt.wrong{border-color:var(--bad);color:var(--bad);animation:shake .4s}
+@keyframes shake{25%{transform:translateX(8px)}75%{transform:translateX(-8px)}}
+.fb{min-height:30px;text-align:center;font-weight:800;margin-top:12px}
+.stars{font-size:44px;text-align:center}
+.cf{position:fixed;top:-20px;width:10px;height:14px;z-index:5;pointer-events:none;animation:fall 1.8s ease-in forwards}
+@keyframes fall{to{transform:translateY(105vh) rotate(720deg);opacity:.2}}
+.nav{display:flex;justify-content:space-between;margin-top:20px}
+.fin{text-align:center}
+.fin .big{font-size:56px;font-family:"Reem Kufi",Tajawal,serif;color:var(--gold);font-weight:700;text-shadow:0 0 30px var(--glow)}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+html,body{max-width:100%;overflow-x:hidden}main{overflow-x:clip;overflow-y:visible}.fx{contain:paint}
+</style>
+</head>
+<body>
+<div class="fx"><div class="orb o1"></div><div class="orb o2"></div><div id="ps"></div></div>
+<main>
+<div class="top">
+<div class="steps" id="steps"></div>
+<button class="snd" id="snd" aria-label="الصوت">🔊</button>
+</div>
 
+<section class="screen on" id="s0">
+<div class="hero">
+<div class="rays"></div>
+<span class="kicker">برنامج «لفظ ودلالته»</span>
+<h1>نُور</h1>
+<p class="lead">هل تعلمين أن كلمةً واحدة قد تحمل عشرات المعاني؟ هيا نكتشف معًا سرَّ «نور» ونضيء لغتنا العربية!</p>
+<div class="glass credit">
+<div class="lbl">إعداد الطالبة</div>
+<div class="nm">رتيل سعود الحربي</div>
+<div class="gr">الصف الأول المتوسط · عام</div>
+<div class="lbl">إشراف</div>
+<div class="nm" style="font-size:20px;margin:0">معلمات اللغة العربية</div>
+</div>
+<button class="btn" data-go="1">هيا نبدأ الرحلة 🚀</button>
+</div>
+</section>
+
+<section class="screen" id="s1">
+<h2>🔍 اكتشفي أسرار «نور»</h2><p class="intro">اضغطي على كل بطاقة وراقبي كيف يتبدّل معنى الكلمة ولونها مع كل سياق!</p>
+<div class="tiles" id="tiles"></div>
+<div class="glass mcard" id="mcard" aria-live="polite"></div>
+<div class="nav"><button class="btn ghost" data-go="0">→ السابق</button><button class="btn ghost" data-go="2">التالي ←</button></div>
+</section>
+
+<section class="screen" id="s2">
+<h2>🎭 «نور» في سياقاتٍ مختلفة</h2><p class="intro">اختاري سياقًا وشاهدي الكلمة تظهر أمامك كلمةً كلمة.</p>
+<div class="tabs" id="tabs" role="tablist"></div>
+<div class="glass ctx" id="ctx" aria-live="polite"></div>
+<div class="nav"><button class="btn ghost" data-go="1">→ السابق</button><button class="btn ghost" data-go="3">التالي ←</button></div>
+</section>
+
+<section class="screen" id="s3">
+<h2>🏆 تحدّي «أيّ نور؟»</h2><p class="intro">حان وقت التحدّي! اقرئي الجملة جيدًا واختاري نوع الدلالة، وكل إجابة صحيحة تُشعل الاحتفال.</p>
+<div class="prog"><i id="bar"></i></div>
+<div class="glass" id="quiz"></div>
+<div class="nav"><button class="btn ghost" data-go="2">→ السابق</button><button class="btn ghost" data-go="4">الختام ←</button></div>
+</section>
+
+<section class="screen" id="s4">
+<div class="glass fin">
+<div class="big">كلماتنا نور!</div>
+<p style="font-size:20px">ما أجملَ لغتنا العربية! كلما تعمّقنا في معاني كلماتها ازداد بريقُها. تذكّري دائمًا: السياقُ مفتاحُ المعنى، والكلمةُ الطيبة نورٌ يمشي بين الناس.</p>
+<div class="credit">
+<div class="lbl">إعداد الطالبة</div>
+<div class="nm">رتيل سعود الحربي</div>
+<div class="gr">الصف الأول المتوسط · عام</div>
+<div class="lbl">إشراف</div>
+<div class="nm" style="font-size:20px;margin:0">معلمات اللغة العربية</div>
+</div>
+<p style="color:var(--mute)">شكرًا لإصغائكم 🌟</p>
+<button class="btn" data-go="0">العودة إلى البداية</button>
+</div>
+</section>
+</main>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+var M=[
+{i:"☀️",c:"#f0a500",n:"ضوء",m:"ضوء الشمس والمصباح",t:"حسية",s:"ملأ <b>نورُ</b> الشمسِ الغرفةَ فبدتْ أجمل",f:"النورُ في أصل اللغة هو الضياءُ الذي نرى به الأشياء."},
+{i:"📖",c:"#2f8fd8",n:"علم",m:"العلم والمعرفة",t:"معنوية",s:"العلمُ <b>نورٌ</b> يبدّد ظلامَ الجهل",f:"عبّر العربُ عن الجهل بالظلام، فصار العلمُ نورًا يقابله."},
+{i:"🕌",c:"#1fa37a",n:"هداية",m:"الهداية والإيمان",t:"دينية",s:"أضاء القرآنُ بـ<b>نوره</b> قلوبَ المؤمنين",f:"في القرآن الكريم سورةٌ كاملة تحمل اسم «النور»."},
+{i:"🌸",c:"#e0587f",n:"وجه",m:"إشراق الوجه وجماله",t:"مجازية",s:"في وجهها <b>نورٌ</b> يسرّ الناظرين",f:"المجاز استعمالُ الكلمة في غير معناها الأصلي لعلاقةٍ بينهما."},
+{i:"😊",c:"#f08a3c",n:"أمل",m:"الأمل والسعادة",t:"مجازية",s:"ابتسامتكِ <b>نورٌ</b> في يومي",f:"نقول «بصيصُ نور» حين نصف بداية الأمل."},
+{i:"👁️",c:"#3aa6b9",n:"بصر",m:"نور العين (البصر)",t:"حسية",s:"حافظي على <b>نورِ</b> عينيكِ بعيدًا عن كثرة الشاشات",f:"يقولون «نورُ العين» ويقصدون قوةَ البصر."},
+{i:"🏡",c:"#c4672f",n:"حبّ",m:"الشخص الغالي",t:"مجازية",s:"وجودُ جدّتي <b>نورُ</b> البيت",f:"نشبّه من نحبّ بالنور لأنهم يملؤون حياتنا بهجةً ودفئًا."},
+{i:"👧",c:"#8a63d2",n:"اسم",m:"اسم علَم",t:"اسم علم",s:"زميلتي «<b>نورُ</b>» متفوقة في دراستها",f:"«نور» اسمٌ جميل للبنات، ومعناه الضياء."}
+];
+var C=[
+{n:"قرآن",h:'<div class="quran">﴿اللَّهُ نُورُ السَّمَاوَاتِ وَالْأَرْضِ﴾</div><div class="src">سورة النور، الآية ٣٥ — النور هنا بمعنى الهداية. ومن بديع الآية قوله تعالى: ﴿نُّورٌ عَلَىٰ نُورٍ﴾.</div>'},
+{n:"شعر",h:'نورُ الشمسِ إذا أشرقتْ يملأُ الدنيا ضياءً<br>ونورُ العلمِ إذا سكنَ القلبَ زادَ الروحَ صفاءً<br>ونورُ الأمِّ إذا ابتسمتْ أنساني التعبَ والعناءَ<br>فلنجعلْ لغتَنا نورًا يمحو عن الدنيا الظلماءَ<div class="src">أبيات من تأليفي: الأول حسي، والثاني معنوي، والثالث مجازي.</div>'},
+{n:"نثر",h:'انقطعت الكهرباء عن الحيّ في ليلةٍ شتوية، فأضاءت أمي شمعةً صغيرة، فإذا بالبيت كلِّه يبتسم! عندها أدركتُ أن للنور قيمةً لا نعرفها إلا إذا غاب، وأن أجمل الأنوار ما أضاء القلوب قبل الغرف.<div class="src">النور حسي في الشمعة، ومجازي في «أضاء القلوب».</div>'},
+{n:"حوار",h:'<b>سارة:</b> انقطع النور! أين المصباح؟<br><b>ريم:</b> وجدته! وسأقرأ لكِ الدرس، فالعلمُ نورٌ لا ينطفئ.<br><b>سارة:</b> وأنتِ نورُ صفّنا يا ريم!<div class="src">«النور» الأولى ضوء حسي، والثانية علم معنوي، والثالثة مدح مجازي.</div>'},
+{n:"عبارات",h:'«العلمُ نورٌ والجهلُ ظلام»<br>«نورٌ على نور»<br>«بصيصُ نورٍ في آخر النفق»<div class="src">كل عبارة تحمل دلالة: العلم، والزيادة في الخير، والأمل.</div>'},
+{n:"قصة",h:'في مدرسةٍ صغيرة، سألت المعلمةُ طالباتها: ما معنى كلمة «نور»؟ قالت الأولى: الشمس. وقالت الثانية: العلم. وقالت الثالثة: ابتسامةُ أمي. ضحكت المعلمة وقالت: كلكنّ على صواب، فالسياقُ هو الذي يختار المعنى!<div class="src">ثلاث إجابات وثلاث دلالات: حسية ومعنوية ومجازية.</div>'}
+];
+var Q=[
+{s:"أضاء المصباحُ الغرفةَ بنورٍ هادئ",a:"حسية"},
+{s:"القراءةُ نورٌ للعقل",a:"معنوية"},
+{s:"اللهُ نورُ السماواتِ والأرض",a:"دينية"},
+{s:"وجهُ جدّتي مشرقٌ بالنور",a:"مجازية"},
+{s:"جاءت نورُ إلى المدرسة مبكرة",a:"اسم علم"},
+{s:"حافظي على نورِ عينيكِ",a:"حسية"},
+{s:"العلمُ نورٌ والجهلُ ظلام",a:"معنوية"},
+{s:"أنتِ نورُ البيتِ يا أمي",a:"مجازية"}
+];
+var T=["حسية","معنوية","دينية","مجازية","اسم علم"];
+var names=["البداية","المعاني","السياقات","التحدّي","الختام"],cur=0;
+
+/* particles */
+(function(){var h="";for(var k=0;k<22;k++){var z=2+Math.random()*5;h+='<span class="p" style="left:'+Math.random()*100+'%;width:'+z+'px;height:'+z+'px;animation-duration:'+(8+Math.random()*10)+'s;animation-delay:-'+Math.random()*12+'s"></span>'}$("ps").innerHTML=h})();
+
+/* sound */
+var on=true,ac=null;
+function tone(f,d,tp){if(!on)return;try{ac=ac||new (window.AudioContext||window.webkitAudioContext)();var o=ac.createOscillator(),g=ac.createGain();o.type=tp||"sine";o.frequency.value=f;g.gain.setValueAtTime(.12,ac.currentTime);g.gain.exponentialRampToValueAtTime(.001,ac.currentTime+d);o.connect(g);g.connect(ac.destination);o.start();o.stop(ac.currentTime+d)}catch(e){}}
+function good(){tone(660,.15);setTimeout(function(){tone(880,.25)},120)}
+function bad(){tone(220,.3,"triangle")}
+$("snd").onclick=function(){on=!on;this.textContent=on?"🔊":"🔇";tone(520,.1)};
+
+/* steps + navigation */
+var st=$("steps");
+names.forEach(function(n,k){var b=document.createElement("button");b.className="step";b.textContent=n;b.onclick=function(){go(k)};st.appendChild(b)});
+function go(k){
+cur=k;
+for(var j=0;j<5;j++){$("s"+j).classList.toggle("on",j===k);st.children[j].classList.toggle("on",j===k)}
+tone(440+k*60,.12);window.scrollTo({top:0,behavior:"smooth"});
+if(k===1)pickM(mi);
+if(k===2)pickC(ci);
+if(k===3&&qi>=Q.length){qi=0;score=0}
+if(k===3)ask();
+if(k===4)confetti(26);
+}
+Array.prototype.forEach.call(document.querySelectorAll("[data-go]"),function(b){b.onclick=function(){go(+b.getAttribute("data-go"))}});
+
+/* meanings */
+var mi=0,tl=$("tiles");
+M.forEach(function(x,k){var b=document.createElement("button");b.className="tile";b.innerHTML='<span class="e">'+x.i+'</span><span class="t">'+x.n+'</span>';b.style.setProperty("--ac",x.c);b.onclick=function(){pickM(k);tone(500+k*70,.15)};tl.appendChild(b)});
+function pickM(k){
+mi=k;var x=M[k],c=$("mcard");
+Array.prototype.forEach.call(tl.children,function(b,j){b.setAttribute("aria-pressed",j===k?"true":"false")});
+c.style.setProperty("--ac",x.c);
+c.innerHTML='<div class="ic">'+x.i+'</div><div><span class="badge">'+x.t+'</span></div><div class="mean">'+x.m+'</div><p class="sent">'+x.s+'</p><p class="fact">💡 '+x.f+'</p>';
+}
+
+/* contexts with word-by-word reveal */
+var ci=0,tb=$("tabs"),tmr=null;
+C.forEach(function(x,k){var b=document.createElement("button");b.className="tab";b.setAttribute("role","tab");b.textContent=x.n;b.onclick=function(){pickC(k);tone(600,.1)};tb.appendChild(b)});
+function pickC(k){
+ci=k;clearTimeout(tmr);
+Array.prototype.forEach.call(tb.children,function(b,j){b.setAttribute("aria-selected",j===k?"true":"false")});
+var box=$("ctx"),tmp=document.createElement("div");tmp.innerHTML=C[k].h;
+var words=[],walk=function(n){n.childNodes.forEach(function(ch){if(ch.nodeType===3){ch.textContent.split(/(\s+)/).forEach(function(w){if(w)words.push(w)});}else walk(ch)})};
+box.innerHTML=C[k].h;
+var spans=[];
+(function wrap(n){Array.prototype.slice.call(n.childNodes).forEach(function(ch){if(ch.nodeType===3){var f=document.createDocumentFragment();ch.textContent.split(/(\s+)/).forEach(function(w){if(!w)return;if(/^\s+$/.test(w)){f.appendChild(document.createTextNode(w))}else{var s=document.createElement("span");s.textContent=w;s.style.opacity=0;spans.push(s);f.appendChild(s)}});n.replaceChild(f,ch)}else wrap(ch)})})(box);
+var i=0;(function step(){if(i>=spans.length)return;spans[i].style.opacity=1;spans[i].className="w";i++;tmr=setTimeout(step,90)})();
+}
+
+/* quiz */
+var qi=0,score=0,locked=false;
+function confetti(n){var cs=["#f6c243","#63c3d3","#e0587f","#8a63d2","#1fa37a"];for(var k=0;k<n;k++){var d=document.createElement("i");d.className="cf";d.style.left=Math.random()*100+"vw";d.style.background=cs[k%5];d.style.animationDelay=Math.random()*.5+"s";document.body.appendChild(d);setTimeout(function(e){e.remove()},2600,d)}}
+function ask(){
+locked=false;$("bar").style.width=(Math.min(qi,Q.length)/Q.length*100)+"%";
+var z=$("quiz");
+if(qi>=Q.length){
+var s="";for(var k=0;k<Q.length;k++)s+=k<score?"⭐":"☆";
+var msg=score===Q.length?"رائع! أنتِ نجمة اللغة العربية وخبيرة دلالات «نور»":score>=6?"ممتاز! اقتربتِ من الدرجة الكاملة، حاولي مرة أخرى":score>=4?"أحسنتِ! راجعي المعاني وستصلين للقمة":"بداية جميلة! عودي إلى المعاني وحاولي من جديد، فأنتِ قادرة";
+z.innerHTML='<div class="stars">'+s+'</div><div class="q">نتيجتك: '+score+' من '+Q.length+'</div><p class="hint">'+msg+'</p><div class="opts"><button class="btn" id="again">إعادة التحدّي</button></div>';
+if(score===Q.length)confetti(40);
+$("again").onclick=function(){qi=0;score=0;ask()};return}
+var q=Q[qi];
+z.style.animation="none";void z.offsetWidth;z.style.animation="";
+z.innerHTML='<p class="hint">السؤال '+(qi+1)+' من '+Q.length+'</p><div class="q">«'+q.s+'»</div><p class="hint">ما نوع دلالة كلمة «نور» هنا؟</p><div class="opts" id="opts"></div><div class="fb" id="fb"></div>';
+T.forEach(function(t){var b=document.createElement("button");b.className="opt";b.textContent=t;b.onclick=function(){pick(b,t)};$("opts").appendChild(b)});
+}
+function pick(b,t){
+if(locked)return;locked=true;var q=Q[qi],fb=$("fb");
+Array.prototype.forEach.call(b.parentNode.children,function(c){if(c.textContent===q.a)c.classList.add("right")});
+if(t===q.a){score++;fb.textContent="أحسنتِ! إجابة صحيحة 🎉";fb.style.color="var(--ok)";good();confetti(14)}
+else{b.classList.add("wrong");fb.textContent="قريبة! الإجابة الصحيحة: "+q.a;fb.style.color="var(--bad)";bad()}
+setTimeout(function(){qi++;ask()},1700);
+}
+go(0);
+</script>
+</body>
+</html>
